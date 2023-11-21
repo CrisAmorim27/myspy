@@ -1,113 +1,113 @@
 const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, isROwner}) => {
   const optionsFull = `*Opción:* ✨ | WELCOME
 *Comando:* ${usedPrefix + command} welcome
-*Descripción:* Activa o desactiva la bienvenida en el grupo.
+*Descripción:* Ativa ou desativa bem vindo no grupo.
 
 --------------------------------
 
 *Opción:* 🌎 | MODO PUBLICO
 *Comando:* ${usedPrefix + command} public
-*Descripción:* El Bot se vuelve de uso publico y/o privado.
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
+*Descripción:* O Bot passa a ser de uso público e/ou privado.
+*Nota:* Este comando é só pro meu Mestre Spy, se necessário aqui está o contato wa.me/554884702848.
 
 --------------------------------
 
 *Opción:* 🥵 | MODO HORNY
 *Comando:* ${usedPrefix + command} modohorny
-*Descripción:* Activa o desactiva los comandos +18 en el grupo.
+*Descripción:* Ativa ou desativa os comandos +18 nesse grupo.
 
 --------------------------------
 
 *Opción:* 🔗 | ANTILINK
 *Comando:* ${usedPrefix + command} antilink
-*Descripción:* Activa o desactiva el anti-enlaces de WhatsApp.
-*Nota:* Se necesita tener activo el restrict.
+*Descripción:* Ativa ou desativa anti-links de WhatsApp.
+*Nota:* Nescessário estar ativo modo restrict.
 
 --------------------------------
 
 *Opción:* 🔗 | ANTILINK 2
 *Comando:* ${usedPrefix + command} antilink2
-*Descripción:* Activa o desactiva el anti-enlaces que inician en HTTPS.
-*Nota:* Se necesita tener activo el restrict.
+*Descripción:* Ativa ou desativa anti-link que iniciarem com HTTPS.
+*Nota:* Nescessário estar ativo modo restrict.
 
 --------------------------------
 
 *Opción:* 🔎 | DETECT
 *Comando:* ${usedPrefix + command} detect
-*Descripción:* Activa o desacriva las notificaciones de cambios en el grupo.
+*Descripción:* Ativa ou desativa as notificações de cambios nesse grupo.
 
 --------------------------------
 
 *Opción:* 🔎 | DETECT 2
 *Comando:* ${usedPrefix + command} detect2
-*Descripción:* Detecta modificaciones en el grupo y mantiene una mejor gestion.
+*Descripción:* Detecta modificações no grupo e mantém uma melhor gestão.
 
 --------------------------------
 
 *Opción:* ❗ | RESTRICT
 *Comando:* ${usedPrefix + command} restrict
-*Descripción:* Activa o desactiva las restricciones del Bot, como la de sacar o agregar personas a un grupo.
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
+*Descripción:* Ativa ou desativa as restrições do Bot, como remover ou adicionar membros ao grupo.
+*Nota:* Este comando é só pro meu Mestre Spy, se necessário aqui está o contato wa.me/554884702848.
 
 --------------------------------
 
 *Opción:* ☑️ | AUTOREAD
 *Comando:* ${usedPrefix + command} autoread
-*Descripción:* Marca como leido los mensajes y los estados automáticamente.
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
+*Descripción:* Marca como lido todas as mensagens automáticamente.
+*Nota:* Este comando é só pro meu Mestre Spy, se necessário aqui está o contato wa.me/554884702848.
 
 --------------------------------
 
 *Opción:* 🔊 | AUDIOS
 *Comando:* ${usedPrefix + command} audios
-*Descripción:* Activa o desactiva los comandos de audios sin prefijos, en el grupo.
+*Descripción:* Ativa ou desativa os comandos de áudios sem prefixo, nesse grupo.
 
 --------------------------------
 
 *Opción:* 👾 | AUTOSTICKER
 *Comando:* ${usedPrefix + command} autosticker 
-*Descripción:* Todas las imagenes o videos enviados en el grupo se convierten en stickers. 
+*Descripción:* Todas as imagens ou vídeos enviados no grupo viram adesivos. 
 
 --------------------------------
 
 *Opción:* 💬 | PCONLY
 *Comando:* ${usedPrefix + command} pconly
-*Descripción:* El Bot solo responderá a los comandos si es un chat privado.
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
+*Descripción:* O Bot só responderá aos comandos se for um chat privado.
+*Nota:* Este comando é só pro meu Mestre Spy, se necessário aqui está o contato wa.me/554884702848.
 
 --------------------------------
 
 *Opción:* 🏢 | GCONLY
 *Comando:* ${usedPrefix + command} gconly
-*Descripción:* El Bot solo respondera a los comandos si es un grupo. 
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
+*Descripción:* O Bot só responderá aos comandos se for um grupo. 
+*Nota:* Este comando é só pro meu Mestre Spy, se necessário aqui está o contato wa.me/554884702848.
 
 --------------------------------
 
 *Opción:* ❌ | ANTIVIEWONCE 
 *Comando:* ${usedPrefix + command} antiviewonce
-*Descripción:* Las imagenes enviadas para ver solo una vez, son reenviadas normal por el Bot. 
+*Descripción:* Imagens enviadas para serem visualizadas apenas uma vez são reenviadas normalmente pelo Bot.
 
 --------------------------------
 
 *Opción:* 📵 | ANTILLAMADAS
 *Comando:* ${usedPrefix + command} anticall
-*Descripción:* El Bot bloquerá a las personas que llamen al Bot. 
-*Nota:* Este comando solo podra ser usado por owners del Bot.
+*Descripción:* O Bot bloqueará as pessoas que ligarem para o Bot.
+*Nota:* Este comando é só pro meu Mestre Spy.
 
 --------------------------------
 
 *Opción:* 💬 | ANTIPRIVADO
 *Comando:* ${usedPrefix + command} antiprivado
-*Descripción:* El Bot bloquerá a las personas que escriban al privado del Bot. 
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
+*Descripción:* O Bot bloqueará as pessoas que mandarem mensagem para o privado do Bot. 
+*Nota:* Só meu dono irmão.
 
 --------------------------------
 
 *Opción:* 🤬 | ANTITOXIC
 *Comando:* ${usedPrefix + command} antitoxic
-*Descripción:* Detecta la malas palabras y advierte al participante del grupo, antes de ser eliminado.
-*Nota:* Se necesita tener activo el restrict.
+*Descripción:* Detecta palavrões e avisa o participante do grupo antes de ser eliminado.
+*Nota:* O comando _restrict_ precisa estar ativo.
 
 --------------------------------
 
@@ -134,47 +134,47 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
 
 *Opción:* 🤖 | MODEJADIBOT
 *Comando:* ${usedPrefix + command} modejadibot
-*Descripción:* Activa o desactiva el uso del comando para sub bots (${usedPrefix}serbot / ${usedPrefix}jadibot). 
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
+*Descripción:* Ativa ou desativa o uso do comando para sub bots (${usedPrefix}serbot / ${usedPrefix}jadibot). 
+*Nota:* Só meu mestre.
 
 --------------------------------
 
 *Opción:* 👑 | MODOADMIN
 *Comando:* ${usedPrefix + command} modoadmin
-*Descripción:* El Bot solo responderá a los admins del grupo.
+*Descripción:* Bot só responderá admins do grupo.
 
 --------------------------------
 
 *Opción:* 😃 | SIMSIMI
 *Comando:* ${usedPrefix + command} simsimi
-*Descripción:* El Bot empezará a responder a los mensajes usando la IA de SimSimi.
+*Descripción:* O Bot começará a responder às mensagens usando a IA do SimSimi.
 
 --------------------------------
 
 *Opción:* ⏳ | ANTISPAM
 *Comando:* ${usedPrefix + command} antispam
-*Descripción:* El Bot detecta cuando un usuario hace spam de comando y lo banea por 5 segundos y lo advierte.
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
+*Descripción:* O Bot detecta quando um usuário comanda spam e o bane por 5 segundos e avisa.
+*Nota:* Este comando é só pro meu Mestre Spy, se necessário aqui está o contato wa.me/554884702848.
 
 --------------------------------
 
 *Opción:* 🛡️ | ANTIDELETE
 *Comando:* ${usedPrefix + command} antidelete
-*Descripción:* El Bot detecta cuando un usuario elimina un mensaje y lo reenvía.
+*Descripción:* O Bot detecta quando um usuário exclui uma mensagem e a reenvia.
 
 --------------------------------
 
 *Opción:* 🔊 | AUDIOS_BOT
 *Comando:* ${usedPrefix + command} audios_bot
-*Descripción:* Se desactivan los audios del Bot del menuaudios para todos los chats privados.
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
+*Descripción:* O áudio do bot está desativado no menu de áudio para todos os bate-papos privados
+*Nota:* Este comando é só pro meu Mestre Spy, se necessário aqui está o contato wa.me/554884702848.
 
 --------------------------------
 
 *Opción:* 🤖 | MODOIA
 *Comando:* ${usedPrefix + command} modoia
-*Descripción:* Se activa el modo "Inteligencia Artificial" con GPT en todos los chats privados.
-*Nota:* Este comando solo podrá ser usado por owners del Bot.`.trim();
+*Descripción:* Se ativa o modo "Inteligencia Artificial" com GPT em todos os chats privados.
+*Nota:* Este comando só poderá ser usado por owners.`.trim();
 
   const isEnable = /true|enable|(turn)?on|1/i.test(command);
   const chat = global.db.data.chats[m.chat];
