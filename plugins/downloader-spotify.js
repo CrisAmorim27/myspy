@@ -4,7 +4,7 @@ import fs from 'fs';
 import axios from 'axios';
 
 const handler = async (m, { conn, text }) => {
- if (!text) throw `*[❗] Ingrese el nombre de alguna canción de spotify.*`;
+ if (!text) throw `*[❗] Digite o Título da música spotify.*`;
   try {
     const res = await fetch(global.API('ApiEmpire', '/api/spotifysearch?text=' + text))
     const data = await res.json()
@@ -20,12 +20,12 @@ const handler = async (m, { conn, text }) => {
          spotifyi += `	◦  *Artista:* ${spty.artist}\n`
          spotifyi += `	◦  *Album:* ${spty.album}\n`                 
          spotifyi += `	◦  *Publicado:* ${spty.year}\n\n`   
-         spotifyi += `El audio se esta enviando, espere un momento..`
+         spotifyi += `Carregando sua música, espere um momento..`
     await conn.sendMessage(m.chat, {text: spotifyi.trim(), contextInfo: {forwardingScore: 9999999, isForwarded: true, "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.titulowm2, "containsAutoReply": true, "mediaType": 1, "thumbnail": img, "thumbnailUrl": img, "mediaUrl": linkDL, "sourceUrl": linkDL}}}, {quoted: m});
     await conn.sendMessage(m.chat, {audio: music.data, fileName: `${spty.name}.mp3`, mimetype: 'audio/mpeg'}, {quoted: m});
   } catch (error) {
     console.error(error);
-    throw '*[❗] Error, no se encontraron resultados.*';
+    throw '*[❗] Erro, tenta no YouTube com o comando _play_.*';
   }
 };
 handler.command = /^(spotify|music)$/i;
@@ -62,7 +62,7 @@ const handler = async (m, { conn, text }) => {
     const img = await (await fetch(`${spty.data.cover_url}`)).buffer()  
     const letra_s = await find_lyrics(spty.data.name ? spty.data.name : '');
     let letra;
-    letra = `${letra_s ? letra_s + '\n\n🤴🏻 Descarga por BrunoSobrino & TheMystic-Bot-MD 🤖' : '🤴🏻 Descarga por BrunoSobrino & TheMystic-Bot-MD 🤖'}`  
+    letra = `${letra_s ? letra_s + '\n\n🤴🏻 Por Spy The-Bot-MD 🤖' : '🤴🏻 Spy domina bb 🤖'}`  
     const tags = {
       title: spty.data.name || '-',
       artist: artist,
@@ -94,14 +94,14 @@ const handler = async (m, { conn, text }) => {
     let spotifyi = `*• 💽 Spotify Download •*\n\n`
          spotifyi += `	◦  *Título:* ${spty.data.name}\n`
          spotifyi += `	◦  *Artista:* ${spty.data.artists}\n`
-         spotifyi += `	◦  *Album:* ${spty.data.album_name}\n`                 
+         spotifyi += `	◦  *Álbum:* ${spty.data.album_name}\n`                 
          spotifyi += `	◦  *Publicado:* ${spty.data.release_date}\n\n`   
-         spotifyi += `El audio se esta enviando, espere un momento..`
+         spotifyi += `Carregando sua música, espere um momento..`
     await conn.sendMessage(m.chat, {text: spotifyi.trim(), contextInfo: {forwardingScore: 9999999, isForwarded: true, "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.titulowm2, "containsAutoReply": true, "mediaType": 1, "thumbnail": img, "thumbnailUrl": img, "mediaUrl": linkDL, "sourceUrl": linkDL}}}, {quoted: m});
     await conn.sendMessage(m.chat, {audio: fs.readFileSync(`./tmp/${randomName}`), fileName: `${spty.data.name}.mp3`, mimetype: 'audio/mpeg'}, {quoted: m});
   } catch (error) {
     console.error(error);
-    throw '*[❗] Error, no se encontraron resultados.*';
+    throw '*[❗] Erro, tenta no YouTube irmão, usa comando _play_*';
   }
 };
 handler.command = /^(spotify|music)$/i;
@@ -113,7 +113,7 @@ async function spotifydl(url) {
       const res = await spotify.getTrack(url);
       const timeoutPromise = new Promise((_, reject) => {
         setTimeout(() => {
-          reject(new Error('Tiempo de espera agotado'));
+          reject(new Error('Tempo de espera esgotado));
         }, 300000);
       });
       const audioPromise = spotify.downloadTrack(url);
