@@ -32,11 +32,11 @@ global.titulowm2 = `The My Spy - Bot`
 global.igfg = 'The Spy - Bot';
 global.wait = '*[ ⏳ ] Carregando...*';
 
-global.imagen1 = fs.readFileSync('./biel.jpeg');
-global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
-global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png');
-global.imagen4 = fs.readFileSync('./biel.jpeg;
-global.imagen5 = fs.readFileSync('./src/+18.jpg');
+global.imagen1 = fs.readFileSync('./IMG-20231115-WA0572.jpg');
+global.imagen2 = fs.readFileSync('./biel.jpeg');
+global.imagen3 = fs.readFileSync('./biel.jpeg');
+global.imagen4 = fs.readFileSync('./IMG-20231115-WA0572.jpg');
+global.imagen5 = fs.readFileSync('./biel.jpeg');
 global.imagen6 = fs.readFileSync('./biel.jpeg');
 
 global.mods = [];
